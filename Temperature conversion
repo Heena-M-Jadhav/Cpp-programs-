@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+   cout<<"Enter 1 to convert a given value from celsius to fahrenheit. "<<endl;
+   cout<<"Enter 2 to convert a given value form fahrenheit to celsius."<<endl;
+   cin>>n;
+   float cel,faren;
+   if(n==1){
+       cout<<"Enter a celsius value"<<endl;
+       cin>>cel;
+       faren= (cel*(9.0/5.0))+32.0;
+       cout<<"The fahrenheit value of "<<cel<<" is: "<<faren;
+        }
+        else if(n==2){
+             cout<<"Enter a fahrenheit value"<<endl;  
+                cin>> faren;
+                 cel=(faren-32.0)*(5.0/9.0);
+                   cout<<"The celsius value of "<<faren<<" is: "<<cel;
+        }
+        else{
+            cout<<"Invalid input!"<<endl;
+        }
+
+    return 0;
+}
