@@ -1,0 +1,25 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cin>>num;
+    int k=num;
+    int counter=0;
+    int i=2;
+    while(k>0){
+        counter=counter+1;
+       k=k/2;
+    }
+    // cout<<counter;
+    int arr[counter];
+    for(int j=0; j<counter; j++){
+        int m= num%2;
+        arr[j]=m;
+        num= num/2;
+    }
+    for(int k=counter-1;k>=0;k--){
+        cout<<arr[k];
+    }
+       return 0;
+}
